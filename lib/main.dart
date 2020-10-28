@@ -25,9 +25,9 @@ class _HelloAppState extends State<HelloApp> {
     if (MOBILE_SDK_KEY != '') {
       final LDConfig config = LDConfigBuilder(MOBILE_SDK_KEY).build();
       final LDUser user = LDUserBuilder('user key').build();
-      LaunchdarklyFlutterClientSdk.start(config, user).whenComplete(() {
+      LDClient.start(config, user).whenComplete(() {
           updateFlagEvaluation();
-          LaunchdarklyFlutterClientSdk.registerFeatureFlagListener(FEATURE_FLAG_KEY, updateFlagEvaluation);
+          LDClient.registerFeatureFlagListener(FEATURE_FLAG_KEY, updateFlagEvaluation);
       });
     } else {
       setState(() { message = 'MOBILE_SDK_KEY not set'; });
@@ -35,7 +35,7 @@ class _HelloAppState extends State<HelloApp> {
   }
 
   Future<void> updateFlagEvaluation([String flagKey]) async {
-    var result = await LaunchdarklyFlutterClientSdk.boolVariation(FEATURE_FLAG_KEY, false);
+    var result = await LDClient.boolVariation(FEATURE_FLAG_KEY, false);
     setState(() { message = 'Feature "$FEATURE_FLAG_KEY" evaluated to ' + result.toString(); });
   }
 

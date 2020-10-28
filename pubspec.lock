@@ -24,8 +24,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "gw/ch89546/bridging"
-      resolved-ref: ac487e05c1ccbfc8b2e1eadd7d3d684c2228522a
+      ref: master
+      resolved-ref: a34a83e02d42f9bcc56395fd8af27881ae9f914d
       url: "git@github.com:launchdarkly/flutter-client-sdk-private.git"
     source: git
     version: "0.0.1"

@@ -17,7 +17,7 @@ dependencies:
   launchdarkly_flutter_client_sdk:
     git:
       url: git@github.com:launchdarkly/flutter-client-sdk-private.git
-      ref: gw/ch89546/bridging
+      ref: master
 
 # The following section is specific to Flutter.
 flutter:
