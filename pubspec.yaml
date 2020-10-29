@@ -14,10 +14,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  launchdarkly_flutter_client_sdk:
-    git:
-      url: git@github.com:launchdarkly/flutter-client-sdk-private.git
-      ref: master
+  launchdarkly_flutter_client_sdk: ^0.1.0
 
 # The following section is specific to Flutter.
 flutter:

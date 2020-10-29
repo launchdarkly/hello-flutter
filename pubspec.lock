@@ -23,12 +23,10 @@ packages:
   launchdarkly_flutter_client_sdk:
     dependency: "direct main"
     description:
-      path: "."
-      ref: master
-      resolved-ref: a34a83e02d42f9bcc56395fd8af27881ae9f914d
-      url: "git@github.com:launchdarkly/flutter-client-sdk-private.git"
-    source: git
-    version: "0.0.1"
+      name: launchdarkly_flutter_client_sdk
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.0"
   matcher:
     dependency: transitive
     description:
