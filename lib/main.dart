@@ -20,7 +20,7 @@ class _HelloAppState extends State<HelloApp> {
   String message = 'Initializing';
 
   @override
-  Future<void> initState() {
+  Future<void> initState() async {
     super.initState();
     if (MOBILE_SDK_KEY != '') {
       final LDConfig config = LDConfigBuilder(MOBILE_SDK_KEY).build();
@@ -34,7 +34,7 @@ class _HelloAppState extends State<HelloApp> {
     }
   }
 
-  Future<void> updateFlagEvaluation([String flagKey]) async {
+  Future<void> updateFlagEvaluation([String? flagKey]) async {
     var result = await LDClient.boolVariation(FEATURE_FLAG_KEY, false);
     setState(() { message = 'Feature "$FEATURE_FLAG_KEY" evaluated to ' + result.toString(); });
   }
