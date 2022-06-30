@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:launchdarkly_flutter_client_sdk/launchdarkly_flutter_client_sdk.dart';
 
-// Set MOBILE_SDK_KEY to blank ('').
+// Set MOBILE_SDK_KEY to your LaunchDarkly mobile key.
 const String MOBILE_SDK_KEY = '';
 
 // Set FEATURE_FLAG_KEY to the feature flag key you want to evaluate.
