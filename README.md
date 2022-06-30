@@ -6,7 +6,6 @@ Below, you'll find the basic build procedure. For more comprehensive instruction
 
 ## Build instructions
 
-
 1. Edit `lib/main.dart` and set the value of `MOBILE_SDK_KEY` to your LaunchDarkly mobile key. If there is an existing boolean feature flag in your LaunchDarkly project that you want to evaluate, set `FEATURE_FLAG_KEY` to the flag key.
 
 2. On the command line, run `flutter run`.
