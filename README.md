@@ -2,7 +2,7 @@
 
 We've built a simple Flutter application that demonstrates how LaunchDarkly's SDK works.
 
-Below, you'll find the basic build procedure. For more comprehensive instructions, you can visit your [Quickstart page](https://app.launchdarkly.com/quickstart#/) or the [Flutter SDK reference guide](https://docs.launchdarkly.com/sdk/client-side/flutter).
+Below, you'll find the build procedure. For more comprehensive instructions, you can visit your [Quickstart page](https://app.launchdarkly.com/quickstart#/) or the [Flutter SDK reference guide](https://docs.launchdarkly.com/sdk/client-side/flutter).
 
 ## Build instructions
 
