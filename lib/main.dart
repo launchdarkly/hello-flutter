@@ -20,7 +20,7 @@ class _HelloAppState extends State<HelloApp> {
   String message = 'Initializing';
 
   @override
-  Future<void> initState() async {
+  void initState() {
     super.initState();
     if (MOBILE_SDK_KEY != '') {
       final LDConfig config = LDConfigBuilder(MOBILE_SDK_KEY).build();
