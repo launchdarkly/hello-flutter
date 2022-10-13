@@ -14,7 +14,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  launchdarkly_flutter_client_sdk: ^1.0.0
+  launchdarkly_flutter_client_sdk: ^1.1.4
 
 # The following section is specific to Flutter.
 flutter:
