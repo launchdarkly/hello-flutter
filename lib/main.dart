@@ -24,8 +24,23 @@ class _HelloAppState extends State<HelloApp> {
     super.initState();
     if (MOBILE_SDK_KEY != '') {
       final LDConfig config = LDConfigBuilder(MOBILE_SDK_KEY).build();
-      final LDUser user = LDUserBuilder('user key').build();
-      LDClient.start(config, user).whenComplete(() {
+
+      final LDContextBuilder builder = LDContextBuilder();
+      builder.kind('user', 'user-key-123abc');
+      final LDContext context = builder.build();
+
+      // --- Another example context showing more customization ---
+      // LDContextBuilder builder = LDContextBuilder();
+      // builder.kind('user', 'user-key-123abc')
+      //     .set('email', userEmail)
+      //     .privateAttributes(['email']);
+      // builder.kind('device')
+      //     .set('os', LDValue.ofString(systemOS))
+      //     .set('device', LDValue.ofString(deviceName));
+      // LDContext context = builder.build();
+      // --- End example ---
+
+      LDClient.startWithContext(config, context).whenComplete(() {
           updateFlagEvaluation();
           LDClient.registerFeatureFlagListener(FEATURE_FLAG_KEY, updateFlagEvaluation);
       });
