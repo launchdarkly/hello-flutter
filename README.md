@@ -1,5 +1,8 @@
 # LaunchDarkly Sample Flutter Application
 
+> [!WARNING]
+> This repository has been superseded by by an [example](https://github.com/launchdarkly/flutter-client-sdk/tree/main/packages/flutter_client_sdk/example) within the SDK repository.
+
 We've built a simple Flutter application that demonstrates how LaunchDarkly's SDK works.
 
 Below, you'll find the basic build procedure, but for more comprehensive instructions, you can visit the [Flutter SDK reference guide](https://docs.launchdarkly.com/sdk/client-side/flutter).
